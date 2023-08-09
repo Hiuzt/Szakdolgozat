@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\Dani\Desktop\geci</_PublishTargetUrl>
+    <History>True|2023-06-08T14:30:51.9970933Z;True|2023-06-08T16:27:31.4934906+02:00;True|2023-06-05T09:57:52.3333642+02:00;True|2023-06-03T01:36:24.9606833+02:00;True|2023-06-02T23:46:48.1854554+02:00;True|2023-06-02T22:23:57.0539108+02:00;True|2023-06-02T22:22:08.7424413+02:00;True|2023-06-02T22:15:49.7023245+02:00;True|2023-06-02T18:10:39.1031084+02:00;True|2023-06-02T18:09:17.3285281+02:00;True|2023-06-02T18:08:15.4280084+02:00;True|2023-06-02T18:06:42.2712460+02:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>
