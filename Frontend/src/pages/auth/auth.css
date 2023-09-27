@@ -1,0 +1,255 @@
+body {
+    margin:0;
+    padding: 0;
+    font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+
+}
+
+.auth-container {
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+
+.login-auth-container {
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.box {
+    background-color: var(--primary-color);
+    /* width: 340px; */
+    border-radius: 15px;
+    padding: 30px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+.box img {
+    max-width: 340px;
+}
+
+.box h2 {
+    text-align: center;
+    color: var(--icon-color);
+}
+
+.box a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+    color: var(--icon-color);
+    font-weight: 200;
+    font-size: 12px;
+}
+
+.input-container{
+	position:relative;
+    margin: 5px;
+	margin-bottom:25px;
+    
+}
+
+
+.input-container label{
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-size:20px;
+	color: var(--icon-color);
+	transition: all 0.2s ease-in-out;
+}
+
+.input-container input{ 
+    border:0;
+    border-bottom:1px solid var(--icon-color);
+    background:transparent;
+    width:100%;
+    padding:8px 0 5px 0;
+    font-size:20px;
+    font-weight: 600;
+    color:var(--icon-color);;
+    transition: all 0.2s ease-in-out;
+}
+
+.input-container input:focus{ 
+    border:none;	
+    outline:none;
+    border-bottom:1px solid var(--hover-color);	
+}
+
+
+.input-container input:focus ~ label,
+.input-container input:valid ~ label {
+	top:-12px;
+	font-size:12px;
+} 
+
+.btn input[type=submit] {
+    background-color: var(--primary-color);
+    outline: none;
+    border: 2px solid var(--hover-color);
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    text-decoration: none;
+    color: var(--icon-color);
+    font-size: 15px;
+    text-transform: uppercase;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.row {
+    display: flex;
+}
+
+.btn input[type=submit]:hover {
+    background-color: var(--hover-color);
+}
+
+.confirm-container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.reset-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        background-color: #FCFBFA;
+        background-image: none;
+    }
+
+    .header {
+      width: 100%;
+    }
+
+    .box {
+        background-color: inherit;
+        width: 100%;
+        padding: 5%;
+    }
+
+    .login-auth-container {
+      height: 100vh;
+    }
+
+    .auth-container {
+      height: auto;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn input[type=submit] {
+        background-color: inherit;
+    }
+
+    .box img {
+        max-width: 90%;
+    }
+
+}
+
+@media only screen and (max-width: 1240px) {
+    .row {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+
+/* */
+.w4rAnimated_checkmark svg {
+    width: 100px;
+    display: block;
+    margin: 40px auto 0;
+  }
+  .w4rAnimated_checkmark .path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 0;
+  }
+  .w4rAnimated_checkmark .path.circle {
+    -webkit-animation: dash 0.9s ease-in-out;
+    animation: dash 0.9s ease-in-out;
+  }
+  .w4rAnimated_checkmark .path.line {
+    stroke-dashoffset: 1000;
+    -webkit-animation: dash 0.9s 0.35s ease-in-out forwards;
+    animation: dash 0.9s 0.35s ease-in-out forwards;
+  }
+  .w4rAnimated_checkmark .path.check {
+    stroke-dashoffset: -100;
+    -webkit-animation: dash-check 0.9s 0.35s ease-in-out forwards;
+    animation: dash-check 0.9s 0.35s ease-in-out forwards;
+  }
+  
+  @-webkit-keyframes dash {
+    0% {
+      stroke-dashoffset: 1000;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes dash {
+    0% {
+      stroke-dashoffset: 1000;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+  @-webkit-keyframes dash-check {
+    0% {
+      stroke-dashoffset: -100;
+    }
+    100% {
+      stroke-dashoffset: 900;
+    }
+  }
+  @keyframes dash-check {
+    0% {
+      stroke-dashoffset: -100;
+    }
+    100% {
+      stroke-dashoffset: 900;
+    }
+  }
+  
+  
+  
