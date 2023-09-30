@@ -16,11 +16,9 @@ console.log(process.env.REACT_APP_GOOGLE_MAP_API_KEY)
                 <div className="modal-container" onClick={(e) => {
                     e.stopPropagation();
                 }}>
-		{isLoaded ?      
+		{isLoaded && (     
                     <Map modalData={props.modalData} closeAction={props.onClose} getTravels = {props.getTravels}/>                                          
-		:
-		   <></>
-		}
+		)}
                 </div>
             </div>
     )

@@ -244,7 +244,7 @@ const Travels = () => {
                                         }}>
                                             <svg data-tooltip-id="application-tooltip" data-tooltip-content="Információk" height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h48v48H0z" fill="none"/><path d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm2 30h-4V22h4v12zm0-16h-4v-4h4v4z"/></svg>
                                          </div>
-                                        {parseInt(userID) ===travelValue.driverID ?
+                                        {parseInt(userID) ===travelValue.driverID && (
                                             <div onClick={(e) => {
                                                 deleteTravel(travelValue.id);
                                                 for (var i = 0; i < travelValue.length; i++) {
@@ -256,9 +256,7 @@ const Travels = () => {
                                             }}>
                                                 <svg data-tooltip-id="application-tooltip" data-tooltip-content="Utazás törlése" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 448 512"><path d="M135.2 17.7C140.6 6.8 151.7 0 163.8 0H284.2c12.1 0 23.2 6.8 28.6 17.7L320 32h96c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 96 0 81.7 0 64S14.3 32 32 32h96l7.2-14.3zM32 128H416V448c0 35.3-28.7 64-64 64H96c-35.3 0-64-28.7-64-64V128zm96 64c-8.8 0-16 7.2-16 16V432c0 8.8 7.2 16 16 16s16-7.2 16-16V208c0-8.8-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16V432c0 8.8 7.2 16 16 16s16-7.2 16-16V208c0-8.8-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16V432c0 8.8 7.2 16 16 16s16-7.2 16-16V208c0-8.8-7.2-16-16-16z"/></svg>
                                             </div>
-                                        :
-                                            <></>
-                                        } 
+                                        )} 
                                       </td>
                                 </tr>
       
@@ -281,12 +279,9 @@ const Travels = () => {
                                     getTravellersByTravelIDClient(modalData.id)
                                 }}>Utazáson résztvevő emberek</div>
                         </div>    
-                        {isLoaded ?
+                        {isLoaded && (
                             <Map slat = {modalData.fromLat} slng = {modalData.fromLng} lat = {modalData.toLat} lng = {modalData.toLng} showRoutes={true} directions={directions} />  
-                         :
-
-                            <></>
-                        }    
+                        )}    
                         <div className="control-button-container">
                             <div className="control-button" onClick={(e) => (applyForTravel(modalData.id, modalData.driverID))}>
                                 Jelentkezés
